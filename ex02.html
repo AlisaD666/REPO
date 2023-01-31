@@ -5,19 +5,20 @@
   <meta charset="UTF-8">
   <title>Document</title>
   <script>
-function main() {
-    var a = createArray(10);
-    var sum, index;
-    
-    index = 0;
-    sum = 0;
-    for (index = 0; index <= 9; index++) {
-        a[index] = Number(window.prompt('Enter a value for a[index]'));
-        sum = sum + a[index];
-    }
-    window.alert(sum);
-}
+    var n = +prompt("Введите n ");// Считать число и положить в переменную n
 
+    function main() {
+    var f;
+    f = 1;
+
+    while (n > 0) {
+        f = f * n;
+        n = n - 1;
+    }
+    // тут писать код
+
+    document.write("Текст"); // Вывести на экран текст
+    //alert(f); // Вывести на экран значение переменной
   </script>
 </head>
 
