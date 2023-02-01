@@ -1,28 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <script>
-    var n = +prompt("Введите n ");// Считать число и положить в переменную n
-    var f;
+<script>
+function main() {
+    var n, f;
+    
     f = 1;
-
+    n = Number(window.prompt('Enter a value for n'));
     while (n > 0) {
         f = f * n;
         n = n - 1;
     }
-    // тут писать код
+    window.alert(f);
+}
 
-    document.write("Текст"); // Вывести на экран текст
-    //alert(f); // Вывести на экран значение переменной
-  </script>
-</head>
-
-<body>
-  <p style="color: blue;">Каеф!</p>
-
-</body>
-
-</html>
+</script>
